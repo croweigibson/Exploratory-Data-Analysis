@@ -135,21 +135,30 @@ Box plots highlight the spread of data and detect outliers. The presence of extr
 
 
 ### Traffic Source Insights
-
-![Bounce Rate by Traffic Source](image-6.png)
-![Session Duration by Traffic Source](image-7.png)
-![Time on Page by Previous Visits](image-8.png)
 ```python
-traffic_summary = website.groupby("Traffic Source").agg(
+# Compare key metrics by traffic source (example)
+traffic_insights = website.groupby("Traffic Source").agg(
     Avg_Session_Duration=("Session Duration", "mean"),
     Avg_Conversion_Rate=("Conversion Rate", "mean"),
     Bounce_Rate=("Bounce Rate", "mean")
 ).sort_values(by="Avg_Conversion_Rate", ascending=False)
-print(traffic_summary)
+print(traffic_insights)
+```
+![Traffic Source Metrics ](image-9.png)
+
+### Session Duration Insights
+![Session Duration by Traffic Source](image-7.png)
+```python
+plt.figure(figsize=(10, 6))
+sns.barplot(data=website, x="Traffic Source", y="Session Duration", estimator="mean")
+plt.title("Session Duration by Traffic Source")
+plt.ylabel("Average Session Duration")
+plt.show()
 ```
 
 This code groups the dataset by traffic source and calculates key performance metrics, such as average session duration, conversion rate, and bounce rate. This helps to compare how different traffic sources perform in driving user engagement.
 
+### Bounce Rate Analysis
 ```python
 plt.figure(figsize=(10, 6))
 sns.barplot(data=website, x="Traffic Source", y="Bounce Rate")
@@ -157,7 +166,16 @@ plt.title("Bounce Rate by Traffic Source")
 plt.ylabel("Average Bounce Rate")
 plt.show()
 ```
+![Bounce Rate by Traffic Source](image-6.png)
 
+### Previous Visits Insights
+```python
+# Time on Page by Previous Visits
+sns.boxplot(data=website, x="Previous Visits", y="Time on Page")  
+plt.title("Time on Page by Previous Visits")  
+plt.show()
+```
+![Time on Page by Previous Visits](image-8.png)
 ## Key Insights
 
 - **User Engagement**: Most users view between 3–7 pages per session; the conversion rate is predominantly high.

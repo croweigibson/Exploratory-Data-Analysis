@@ -16,7 +16,22 @@
 
 ## Introduction
 
-This report presents a comprehensive exploratory data analysis of a website traffic dataset. The aim is to clean, explore, and visualise the data to uncover actionable insights. This project is currently being undertaken as part of my HNG internship, utilising Python libraries such as `pandas`, `matplotlib`, and `seaborn`.
+This report presents a comprehensive exploratory data analysis of a website traffic dataset. The aim is to clean, explore, and visualise the data to uncover actionable insights. This project is currently being undertaken as part of my HNG internship, utilising Python for data analysis. For the complete analysis, refer to the full Jupyter Notebook: [EDA.ipynb](./EDA.ipynb).
+
+ 
+## Data Source
+
+The dataset, `website_dataset.csv`, contains website traffic-related information, including page views, session duration, bounce rate, traffic sources, time on page, previous visits, and conversion rate. It was provided as a case study for applying data cleaning, standardisation, and optimisation techniques.
+
+Using the `data.shape` function, it was discovered that the dataset contains **2000 rows** and **7 columns**, providing a comprehensive set of website traffic data for analysis.
+
+## Tools
+
+- **Jupyter Notebook**: Used as the primary environment for writing and executing code.
+- **Python**: The primary language for data manipulation.
+- **Pandas**: For data loading, exploration, and cleaning.
+- **Matplotlib (plt)**: For data visualisation, helping to analyse and display patterns.
+- **Seaborn**: Used for advanced data visualisation and statistical plotting.
 
 ## Dataset Overview
 

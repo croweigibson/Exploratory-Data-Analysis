@@ -16,12 +16,12 @@
 
 ## Introduction
 
-This report presents a comprehensive exploratory data analysis of a website traffic dataset. The aim is to clean, explore, and visualise the data to uncover actionable insights. This project is currently being undertaken as part of my HNG internship, utilising Python for data analysis. For the complete analysis, refer to the full Jupyter Notebook: [EDA.ipynb](C:\Users\HP\Documents\GitHub\Exploratory-Data-Analysis\EDA.ipynb).
+This report presents a comprehensive exploratory data analysis of a website traffic dataset. The aim is to clean, explore, and visualise the data to uncover actionable insights. This project is currently being undertaken as part of my HNG internship, utilising Python for data analysis. For the complete analysis, refer to the full [Jupyter Notebook](https://github.com/croweigibson/Exploratory-Data-Analysis/blob/main/EDA.ipynb).
 
  
 ## Data Source
 
-The dataset, [website_dataset.csv](C:\Users\HP\Documents\GitHub\Exploratory-Data-Analysis\website_dataset.csv), contains website traffic-related information, including page views, session duration, bounce rate, traffic sources, time on page, previous visits, and conversion rate. It was provided as a case study for applying data cleaning, standardisation, and optimisation techniques.
+The dataset, [`website_dataset.csv`](https://github.com/croweigibson/Exploratory-Data-Analysis/blob/main/website_dataset.csv), contains website traffic-related information, including page views, session duration, bounce rate, traffic sources, time on page, previous visits, and conversion rate. It was provided as a case study for applying data cleaning, standardisation, and optimisation techniques.
 
 Using the `data.shape` function, it was discovered that the dataset contains **2000 rows** and **7 columns**, providing a comprehensive set of website traffic data for analysis.
 
